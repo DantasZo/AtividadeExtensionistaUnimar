@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial - Avaliador de Filmes</title>
+    <style>
+        body {
+            background-color: #F0F8FF;
+            font-family: sans-serif;
+            text-align: center;
+            padding: 2em;
+        }
+        h1 {
+            color: #380B61;
+            margin-bottom: 1em;
+        }
+        .button-container {
+            margin: 1em auto;
+            width: 300px;
+        }
+        .button-container a {
+            display: block;
+            text-decoration: none;
+            margin-bottom: 1em;
+        }
+        .button-container input[type="button"] {
+            font-size: 1.2em;
+            background: #59429d;
+            border: 0;
+            color: #ffffff;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 0.5em;
+        }
+        .button-container input[type="button"]:hover {
+            background: #CCBBFF;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Avaliador de Filmes</h1>
+    <div class="button-container">
+        <a href="formulario.html"><input type="button" value="Cadastrar Filme"></a>
+        <a href="visualiza_filmes.php"><input type="button" value="Visualizar Filmes"></a>
+        <a href="seleciona_filme.php"><input type="button" value="Editar Filme"></a>
+        <a href="seleciona_filme_delete.php"><input type="button" value="Deletar Filme"></a>
+    </div>
+</body>
+
+</html>

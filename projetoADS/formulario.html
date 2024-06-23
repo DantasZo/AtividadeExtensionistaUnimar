@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+
+        <title>Avaliação de Filmes</title>
+    </head>
+
+    <body>  
+
+        <div>
+            <h1 id="titulo">Avaliação de Filmes</h1>
+            <p id="subtitulo">Complete os campos com as informações do filme</p>
+            <br>
+        </div>
+
+        <form method="POST" action="cadastra_filme.php">
+
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="nome"><strong>Nome do Filme</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="genero"><strong>Gênero</strong></label>
+                    <input type="text" name="genero" id="genero" required>
+                </div>
+            </fieldset> 
+
+            <div class="campo">
+                <label for="diretor"><strong>Diretor</strong></label>
+                <input type="text" name="diretor" id="diretor" required>
+            </div>
+
+            <div class="campo">
+                <label for="data_visto"><strong>Data que assistiu ao filme</strong></label>
+                <input type="date" name="data_visto" id="data_visto" required>
+            </div>
+
+            <div class="campo">
+                <label for="nota"><strong>Nota (0 a 10)</strong></label>
+                <input type="number" name="nota" id="nota" min="0" max="10" step="0.1" required>
+            </div>
+
+            <div class="campo">
+                <label for="resenha"><strong>Resenha</strong></label>
+                <textarea rows="6" style="width: 26em" id="resenha" name="resenha" required></textarea>
+            </div>
+
+            <button class="botao" type="submit">Concluído</button>            
+
+        </form>
+
+    </body>
+
+</html>
